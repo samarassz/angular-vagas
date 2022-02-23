@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="row d-flex justify-content-around">
+    <div class="card col-sm-4 mb-3 mx-1" *ngFor="let vaga of vagas">
+      <div class="card-body">
+        <h5 class="card-title">{{ vaga.descricao }}</h5>
+        <h6 class="card-subtitle mb-2 text-muted">{{ vaga.empresa }}</h6>
+        <p class="card-text">{{ vaga.salario }}</p>
+      </div>
+    </div>
+  </div>
+</div>
